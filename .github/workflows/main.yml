@@ -1,0 +1,90 @@
+name: Main
+
+on:
+  workflow_dispatch:
+    inputs:
+      kosli_host:
+        description: 'Kosli host URL'
+        required: true
+        type: string
+      kosli_api_token:
+        description: 'Kosli API token'
+        required: true
+        type: string
+
+env:
+  KOSLI_HOST:      ${{ inputs.kosli_host }}
+  KOSLI_API_TOKEN: ${{ inputs.kosli_api_token }}
+  KOSLI_ORG:       ${{ vars.KOSLI_ORG }}
+  KOSLI_FLOW:      ${{ github.event.repository.name }}-ci
+  KOSLI_TRAIL:     ${{ github.sha}}
+  KOSLI_DEBUG:     ${{ vars.KOSLI_DEBUG }}
+  KOSLI_DRY_RUN:   ${{ vars.KOSLI_DRY_RUN }}
+  REPO_NAME:       ${{ github.event.repository.name }}
+
+jobs:
+  setup:
+    needs: []
+    if: ${{ github.event.repository.name != 'base' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@v6
+
+      - name: Setup this repos json
+        id: setup-repo-json
+        run: |
+          FILTER=".[] | select(.repo_name == \"${REPO_NAME}\")"
+          REPO_JSON="$(jq --compact-output "${FILTER}" data/all-repos.json)"
+          echo "repo_json=${REPO_JSON}" >> ${GITHUB_OUTPUT}
+
+      - name: Setup Kosli CLI
+        uses: kosli-dev/setup-cli-action@v3
+        with:
+          version: ${{ vars.KOSLI_CLI_VERSION }}
+
+      - name: Create Kosli Flow
+        run:
+          kosli create flow "${KOSLI_FLOW}"
+
+      - name: Tag the Flow
+        run:
+          kosli tag flow "${KOSLI_FLOW}"
+            --set kind=build
+            --set ci=github
+            --set repo_url=https://github.com/kosli-demo/"${REPO_NAME}"
+
+      - name: Begin Kosli Trail
+        run:
+          kosli begin trail "${KOSLI_TRAIL}"
+
+      - name: Write Trail URL to GitHub Step Summary
+        run: |
+          url="${KOSLI_HOST}/${KOSLI_ORG}/flows/${KOSLI_FLOW}/trails/${KOSLI_TRAIL}"
+          echo "[Kosli Trail](${url})" > "${GITHUB_STEP_SUMMARY}"
+
+  build-artifact:
+    needs: [setup]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@v6
+
+      - name: Setup Kosli CLI
+        uses: kosli-dev/setup-cli-action@v3
+        with:
+          version: ${{ vars.KOSLI_CLI_VERSION }}
+
+      - name: Kosli attest artifact
+        run:
+          kosli attest artifact ./source/datetime.txt
+            --artifact-type file
+            --name artifact

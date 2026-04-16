@@ -1,0 +1,43 @@
+# The simulate-deployments-from-selected-repos job in the stochastic-committer
+# repo's main.yml fetches source/datetime.txt from every repo in all-repos.json.
+# If any existing repo is missing that file the job fails. This workflow finds
+# such repos and fixes them by pushing the base repo content as a new commit,
+# which creates the missing file.
+
+name: Fix missing source/datetime.txt
+
+on:
+  workflow_dispatch:
+
+jobs:
+  find-missing:
+    runs-on: ubuntu-latest
+    outputs:
+      missing_repos: ${{ steps.find.outputs.missing_repos }}
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@v6
+
+      - name: Find repos missing source/datetime.txt
+        id: find
+        env:
+          GH_TOKEN: ${{ secrets.CLONE_PUSH_REPOS }}
+        run: |
+          MISSING_REPOS="$(./bin/find_repos_missing_datetime.py)"
+          echo "missing_repos=${MISSING_REPOS}" >> ${GITHUB_OUTPUT}
+
+  fix-missing:
+    needs: [find-missing]
+    if: ${{ needs.find-missing.outputs.missing_repos != '[]' }}
+    strategy:
+      matrix:
+        include: ${{ fromJSON(needs.find-missing.outputs.missing_repos) }}
+    uses: kosli-demo/stochastic-committer/.github/workflows/commit-to-repo.yml@main
+    with:
+      repo_name: ${{ matrix.repo_name }}
+    secrets:
+      CLONE_PUSH_REPOS: ${{ secrets.CLONE_PUSH_REPOS }}

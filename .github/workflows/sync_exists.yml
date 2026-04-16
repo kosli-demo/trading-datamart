@@ -1,0 +1,32 @@
+name: Sync exists field in all-repos.json                                                                                                                          
+                                                                                                                                                                    
+on:
+  workflow_dispatch:                                                                                                                                               
+                  
+jobs:
+  sync-exists:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:                                                                                                                                                      
+          egress-policy: audit
+                                                                                                                                                                    
+      - uses: actions/checkout@v6
+
+      - name: Configure git
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.event.sender.login }}@users.noreply.github.com"
+                                                                                                                                                                    
+      - name: Sync exists field
+        env:                                                                                                                                                       
+          GH_TOKEN: ${{ secrets.CLONE_PUSH_REPOS }}
+        run: 
+          ./bin/sync_exists.py                                                                                                                             
+  
+      - name: Commit and push if changed                                                                                                                           
+        run: |  
+          git add data/all-repos.json
+          git diff --cached --quiet || git commit --message "Sync exists field in all-repos.json"
+          git push
