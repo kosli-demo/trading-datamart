@@ -1,0 +1,44 @@
+# The simulate-deployments-from-selected-repos job in the stochastic-committer
+# repo's main.yml fetches source/datetime.txt from every repo in all-repos.json
+# and expects its content to be '<repo_name> <unix_epoch_timestamp>'. If any
+# existing repo is missing that file, or has it with wrong content, the job
+# fails. This workflow finds such repos and fixes them by pushing the base repo
+# content as a new commit, which creates or overwrites the file correctly.
+
+name: Fix wrong source/datetime.txt
+
+on:
+  workflow_dispatch:
+
+jobs:
+  find-wrong:
+    runs-on: ubuntu-latest
+    outputs:
+      wrong_repos: ${{ steps.find.outputs.wrong_repos }}
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@v6
+
+      - name: Find repos with wrong source/datetime.txt
+        id: find
+        env:
+          GH_TOKEN: ${{ secrets.CLONE_PUSH_REPOS }}
+        run: |
+          WRONG_REPOS="$(./bin/find_repos_wrong_datetime.py)"
+          echo "wrong_repos=${WRONG_REPOS}" >> ${GITHUB_OUTPUT}
+
+  fix-wrong:
+    needs: [find-wrong]
+    if: ${{ needs.find-wrong.outputs.wrong_repos != '[]' }}
+    strategy:
+      matrix:
+        include: ${{ fromJSON(needs.find-wrong.outputs.wrong_repos) }}
+    uses: kosli-demo/stochastic-committer/.github/workflows/commit-to-repo.yml@main
+    with:
+      repo_name: ${{ matrix.repo_name }}
+    secrets:
+      CLONE_PUSH_REPOS: ${{ secrets.CLONE_PUSH_REPOS }}
