@@ -1,2002 +1,2502 @@
 [
   {
     "repo_name": "price-index",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "listed-derivative",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "data-adapter",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "golden-ledger",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "commercial-loan",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "risk-service",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "syndicated-deal",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "service-identity",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "trade-queue",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "embedded-compliance",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "predictive-analytics",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "excess-liquidity",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "managed-portfolio",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "ask-spread",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "service-ticket",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "bilateral-counterparty",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "instrument-registry",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "preferred-client",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "performance-index",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "stop-order",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "pending-transaction",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "market-signal",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "auth-microservice",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "instant-payment",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "service-contract",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "system-credential",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "concentration-limit",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "automated-audit",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "secure-relay",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "batch-processor",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "netting-exposure",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "bond-issuer",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "matching-engine",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "domestic-issuer",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "server-certificate",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "acquiring-merchant",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "corporate-bond",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "open-position",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "payment-framework",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "trading-account",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "global-custodian",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "asset-catalog",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "automated-validator",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "balanced-portfolio",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "trading-datamart",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "risk-datamart",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "data-catalog",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "proactive-compliance",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "core-liquidity",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "bearer-token",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "current-yield",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "forward-yield",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "transaction-archive",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "order-router",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "revolving-loan",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "format-adapter",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "overnight-swap",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "legal-contract",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "margin-calculator",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "risk-notification",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "domestic-payment",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "internal-audit",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "registered-merchant",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "net-settlement",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "digital-wallet",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "realtime-stream",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "trade-statement",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "digital-audit",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "trade-registry",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "trade-warehouse",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "online-merchant",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "api-key",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "junior-bond",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "domestic-customer",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "retail-forex",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "risk-module",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "data-framework",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "credit-risk",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "optionadjusted-spread",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "data-proxy",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "routing-proxy",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "smart-router",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "retail-broker",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "prime-broker",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "event-dispatcher",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "long-position",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "benchmark-rate",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "push-notification",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "risk-trigger",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "gross-settlement",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "preferred-customer",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "risk-framework",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "master-contract",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "zerocoupon-spread",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "atomic-transaction",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "trading-agent",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "breach-threshold",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "report-scheduler",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "data-gateway",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "exchange-connector",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "data-relay",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "market-risk",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "event-queue",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "integration-framework",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "private-equity",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "direct-counterparty",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "market-alert",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "credit-limit",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "market-event",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "short-position",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "testing-framework",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "alert-message",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "performance-report",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "data-worker",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "smart-contract",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "benchmark-yield",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "client-datamart",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "api-proxy",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "realtime-transaction",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "regulatory-archive",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "trade-router",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "risk-monitor",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "transaction-analytics",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "public-equity",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "trade-reporting",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "market-connector",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "resilient-pipeline",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "core-service",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "message-processor",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "market-index",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "analytics-platform",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "digital-identity",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "schema-validator",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "automated-invoice",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "continuous-audit",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "payment-worker",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "position-statement",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "unified-wallet",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "senior-bond",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "job-scheduler",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "payment-bridge",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "risk-warehouse",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "central-counterparty",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "payment-gateway",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "write-permission",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "client-identity",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "secured-loan",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "message-router",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "realtime-analytics",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "fixed-rate",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "prop-trader",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "service-credential",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "pricing-module",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "encryption-key",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "risk-analytics",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "escrow-account",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "settlement-engine",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "financial-reporting",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "approval-workflow",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "instrument-catalog",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "fee-calculator",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "realtime-reconciliation",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "event-orchestrator",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "payment-scheduler",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "document-archive",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "continuous-monitor",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "novation-clearing",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "reference-cache",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "local-custodian",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "digital-custody",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "performance-monitor",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "data-transformer",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "pricing-engine",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "otc-derivative",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "price-trigger",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "options-trade",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "totalreturn-swap",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "institutional-client",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "payment-microservice",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "federated-identity",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "event-pipeline",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "derivative-contract",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "trade-message",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "syndicated-loan",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "corporate-identity",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "digital-custodian",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "regulatory-compliance",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "compliance-alert",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "riskfree-yield",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "trading-limit",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "exotic-derivative",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "reporting-threshold",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "net-position",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "barrier-option",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "data-bridge",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "negotiated-deal",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "api-credential",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "overnight-rate",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "compliance-platform",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "priority-ticket",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "credit-spread",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trade-notification",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "data-pipeline",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "atomic-ledger",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "vault-credential",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "margin-account",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "service-catalog",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "international-issuer",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "trade-webhook",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "structured-deal",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "common-equity",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "reporting-currency",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "admin-permission",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "covered-mortgage",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "data-warehouse",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "api-bridge",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "user-credential",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "cold-wallet",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "payment-processor",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "token-issuer",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "model-transformer",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "iceberg-order",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "bilateral-deal",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "swift-connector",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "hot-wallet",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "payment-router",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "compliance-trigger",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "preferred-merchant",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "protocol-adapter",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "liquidity-risk",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "crossborder-payment",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "base-currency",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "ndf-forex",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "market-order",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "daily-statement",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "currency-swap",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "distributed-cache",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "risk-trader",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "credit-event",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "global-custody",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "american-option",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "admin-role",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "risk-limit",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "system-event",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "client-certificate",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "risk-worker",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "executing-broker",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "daily-report",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "signing-key",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "preferred-equity",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "read-permission",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "secure-gateway",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "data-aggregator",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "local-currency",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "regulatory-datamart",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "performance-signal",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "risk-platform",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "private-client",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "prime-custodian",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "continuous-clearing",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "issuing-merchant",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "contingent-liquidity",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "secured-credit",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trade-workflow",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "price-stream",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "conditional-order",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "alert-webhook",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "market-cache",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "canonical-ledger",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "message-queue",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "service-role",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "risk-index",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "clearing-broker",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "final-settlement",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "priority-message",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "operational-risk",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "corporate-client",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "system-message",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "automated-trigger",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trader-role",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trade-aggregator",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "floating-rate",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "immutable-ledger",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "rules-engine",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trading-gateway",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "regulatory-reporting",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "currency-transformer",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "schema-transformer",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "payment-webhook",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "sovereign-bond",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "product-registry",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "algorithmic-trader",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "counterparty-exposure",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "risk-aggregator",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "trade-dispatcher",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trading-signal",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "trade-validator",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "instant-settlement",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "central-vault",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "vostro-account",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "compliance-workflow",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "position-trigger",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trade-orchestrator",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "revolving-credit",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "capital-threshold",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "position-reconciliation",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "central-warehouse",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "api-connector",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "payment-orchestrator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "scheduled-payment",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "binary-option",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "spot-trade",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "risk-engine",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trading-platform",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "order-aggregator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "position-aggregator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "credit-signal",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "trade-permission",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "daily-reconciliation",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "convertible-bond",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "institutional-forex",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "prime-custody",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "digital-vault",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "credit-swap",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "payment-relay",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "secure-token",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "asian-option",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "refresh-token",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "risk-microservice",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "system-webhook",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "sub-custody",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "realtime-monitor",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "compliance-event",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "external-audit",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "central-clearing",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "payment-message",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "dual-currency",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "access-token",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "nostro-account",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "session-cache",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "alert-threshold",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "unsecured-credit",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "legacy-adapter",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "quantitative-trader",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "term-loan",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "institutional-trader",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "institutional-broker",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "retail-client",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "batch-scheduler",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "clearing-counterparty",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "incident-ticket",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "batch-transaction",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "encrypted-vault",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "recurring-payment",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "regulatory-report",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "payment-service",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "forward-forex",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "signing-certificate",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "data-validator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "format-transformer",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "vanilla-derivative",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "secure-vault",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "prime-credit",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "hybrid-mortgage",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "position-limit",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "payment-adapter",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "order-dispatcher",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "system-alert",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trade-report",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "bilateral-clearing",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "compliance-module",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "stress-liquidity",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "data-connector",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "business-validator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "realtime-clearing",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "support-ticket",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "client-invoice",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "settlement-invoice",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "compliance-role",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "monitoring-agent",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "entity-registry",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "realtime-reporting",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "block-trade",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "compliance-notification",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "proforma-invoice",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "aggregated-exposure",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "distributed-ledger",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "risk-calculator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "intermediate-certificate",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "risk-threshold",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "message-dispatcher",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "dividend-yield",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "automated-reporting",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "rotation-key",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "master-key",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "payment-queue",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "bid-spread",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "payment-notification",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "batch-pipeline",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "international-customer",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "async-worker",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "reporting-module",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trusted-counterparty",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "private-vault",
-    "exists": true
+    "exists": true,
+    "has_junit": true
   },
   {
     "repo_name": "corporate-customer",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "working-capital",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "microservice-orchestrator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "compliance-agent",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "legacy-bridge",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "nostro-reconciliation",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "synthetic-portfolio",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "change-ticket",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "diversified-portfolio",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "compliance-monitor",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "risk-alert",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "fraud-alert",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "reference-warehouse",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "distributed-orchestrator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "indexed-portfolio",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "system-bridge",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "portfolio-statement",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "historical-archive",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "financial-datamart",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "event-relay",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "futures-trade",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "interest-swap",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "reference-rate",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "message-relay",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "automated-scheduler",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "spot-forex",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "corporate-wallet",
-    "exists": true
+    "exists": true,
+    "has_junit": false
   },
   {
     "repo_name": "pricing-cache",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "onboarding-workflow",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "audit-role",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "session-token",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "structured-derivative",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "syndicated-credit",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "payment-module",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "tax-calculator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "continuous-compliance",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "deferred-settlement",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "residential-mortgage",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "reverse-proxy",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "liquid-equity",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "regulatory-capital",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "commercial-mortgage",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "risk-agent",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "elevated-permission",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "market-stream",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "tier-one-capital",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "event-processor",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "limit-order",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "tax-invoice",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "root-certificate",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "gross-exposure",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "vanilla-option",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "event-stream",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "payment-workflow",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "risk-report",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "auth-proxy",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "data-microservice",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "api-gateway",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "automated-reconciliation",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "credit-index",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "trading-service",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trade-stream",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "data-platform",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "compliance-service",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "intelligent-agent",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "sub-custodian",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "digital-customer",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "functional-currency",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "behavioral-analytics",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "global-capital",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "allocated-capital",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "corporate-event",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "net-exposure",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "streaming-pipeline",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "card-issuer",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "product-catalog",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "client-registry",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "failed-transaction",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trading-microservice",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "order-queue",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "crossborder-deal",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "notification-dispatcher",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "yield-calculator",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "automated-compliance",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "trade-archive",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "account-statement",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "local-custody",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "forward-trade",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "stream-processor",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "batch-worker",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "systemic-risk",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "closed-position",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "intraday-liquidity",
-    "exists": false
+    "exists": false,
+    "has_junit": false
   },
   {
     "repo_name": "fixed-mortgage",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "risk-signal",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   },
   {
     "repo_name": "market-webhook",
-    "exists": false
+    "exists": false,
+    "has_junit": true
   }
 ]

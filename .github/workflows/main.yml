@@ -27,6 +27,8 @@ jobs:
     needs: []
     if: ${{ github.event.repository.name != 'base' }}
     runs-on: ubuntu-latest
+    outputs:
+      repo_json: ${{ steps.setup-repo-json.outputs.repo_json }}
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@v2
@@ -58,6 +60,12 @@ jobs:
             --set ci=github
             --set repo_url=https://github.com/kosli-demo/"${REPO_NAME}"
 
+      - name: Tag the Flow with unit_tests
+        if: fromJSON(steps.setup-repo-json.outputs.repo_json).has_junit
+        run:
+          kosli tag flow "${KOSLI_FLOW}"
+            --set unit_tests=true
+
       - name: Begin Kosli Trail
         run:
           kosli begin trail "${KOSLI_TRAIL}"
@@ -88,3 +96,26 @@ jobs:
           kosli attest artifact ./source/datetime.txt
             --artifact-type file
             --name artifact
+
+  attest-junit:
+    needs: [setup]
+    if: fromJSON(needs.setup.outputs.repo_json).has_junit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@v6
+
+      - name: Setup Kosli CLI
+        uses: kosli-dev/setup-cli-action@v3
+        with:
+          version: ${{ vars.KOSLI_CLI_VERSION }}
+
+      - name: Kosli attest junit
+        run:
+          kosli attest junit
+            --name unit-tests
+            --results-dir ./source
