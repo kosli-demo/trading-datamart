@@ -1,0 +1,12 @@
+name: Trigger Main
+
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    uses: ./.github/workflows/main.yml
+    with:
+      kosli_host: https://staging.app.kosli.com
+    secrets:
+      kosli_api_token: ${{ secrets.KOSLI_API_TOKEN_STAGING }}

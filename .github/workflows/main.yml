@@ -12,9 +12,18 @@ on:
         required: true
         type: string
 
+  workflow_call:
+    inputs:
+      kosli_host:
+        required: true
+        type: string
+    secrets:
+      kosli_api_token:
+        required: true
+
 env:
   KOSLI_HOST:      ${{ inputs.kosli_host }}
-  KOSLI_API_TOKEN: ${{ inputs.kosli_api_token }}
+  KOSLI_API_TOKEN: ${{ inputs.kosli_api_token || secrets.kosli_api_token }}
   KOSLI_ORG:       ${{ vars.KOSLI_ORG }}
   KOSLI_FLOW:      ${{ github.event.repository.name }}-ci
   KOSLI_TRAIL:     ${{ github.sha}}
@@ -25,10 +34,13 @@ env:
 jobs:
   setup:
     needs: []
-    if: ${{ github.event.repository.name != 'base' }}
     runs-on: ubuntu-latest
     outputs:
-      repo_json: ${{ steps.setup-repo-json.outputs.repo_json }}
+      image_name:  ${{ steps.vars.outputs.image_name }}
+      image_tag:   ${{ steps.vars.outputs.image_tag }}
+      kosli_flow:  ${{ steps.vars.outputs.kosli_flow }}
+      kosli_trail: ${{ steps.vars.outputs.kosli_trail }}
+      repo_json:   ${{ steps.setup-repo-json.outputs.repo_json }}
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@v2
@@ -37,21 +49,33 @@ jobs:
 
       - uses: actions/checkout@v6
 
+      - name: Prepare outputs for workflow jobs
+        id: vars
+        run: |
+          IMAGE_NAME="ghcr.io/${{ github.repository }}"
+          IMAGE_TAG=${GITHUB_SHA:0:7}
+          {
+            echo "image_name=${IMAGE_NAME}"
+            echo "image_tag=${IMAGE_TAG}"
+            echo "kosli_flow=${KOSLI_FLOW}"
+            echo "kosli_trail=${KOSLI_TRAIL}"
+          } > ${GITHUB_OUTPUT}
+
       - name: Setup this repos json
         id: setup-repo-json
         run: |
           FILTER=".[] | select(.repo_name == \"${REPO_NAME}\")"
           REPO_JSON="$(jq --compact-output "${FILTER}" data/all-repos.json)"
-          echo "repo_json=${REPO_JSON}" >> ${GITHUB_OUTPUT}
+          echo "repo_json=${REPO_JSON:-{}}" >> ${GITHUB_OUTPUT}
 
       - name: Setup Kosli CLI
-        uses: kosli-dev/setup-cli-action@v3
+        uses: kosli-dev/setup-cli-action@v5
         with:
           version: ${{ vars.KOSLI_CLI_VERSION }}
 
       - name: Create Kosli Flow
         run:
-          kosli create flow "${KOSLI_FLOW}"
+          kosli create flow "${KOSLI_FLOW}" --use-empty-template
 
       - name: Tag the Flow
         run:
@@ -61,7 +85,7 @@ jobs:
             --set repo_url=https://github.com/kosli-demo/"${REPO_NAME}"
 
       - name: Tag the Flow with unit_tests
-        if: fromJSON(steps.setup-repo-json.outputs.repo_json).has_junit
+        if: github.event.repository.name != 'base' && fromJSON(steps.setup-repo-json.outputs.repo_json).has_junit
         run:
           kosli tag flow "${KOSLI_FLOW}"
             --set unit_tests=true
@@ -75,7 +99,54 @@ jobs:
           url="${KOSLI_HOST}/${KOSLI_ORG}/flows/${KOSLI_FLOW}/trails/${KOSLI_TRAIL}"
           echo "[Kosli Trail](${url})" > "${GITHUB_STEP_SUMMARY}"
 
-  build-artifact:
+
+  build:
+    needs: [setup]
+    uses: kosli-demo/actions/.github/workflows/secure-docker-build.yml@main
+    with:
+      checkout_repository: ${{ github.repository }}
+      checkout_ref: ${{ github.sha }}
+      checkout_fetch_depth: 1
+      image_name: ${{ needs.setup.outputs.image_name }}
+      image_tag: ${{ needs.setup.outputs.image_tag }}
+      kosli_host: ${{ inputs.kosli_host }}
+      kosli_flow: ${{ needs.setup.outputs.kosli_flow }}
+      kosli_trail: ${{ needs.setup.outputs.kosli_trail }}
+      kosli_reference_name: artifact
+    secrets:
+      kosli_api_token: ${{ inputs.kosli_api_token || secrets.kosli_api_token }}
+
+
+  attest-junit:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@v6
+
+      - name: Download Docker image tar
+        uses: actions/download-artifact@v6
+        with:
+          name: ${{ needs.build.outputs.digest }}
+
+      - name: Setup Kosli CLI
+        uses: kosli-dev/setup-cli-action@v5
+        with:
+          version: ${{ vars.KOSLI_CLI_VERSION }}
+
+      - name: Kosli attest junit
+        run:
+          kosli attest junit ${{ needs.build.outputs.digest }}.tar
+            --artifact-type file
+            --name unit-tests
+            --results-dir ./source
+
+
+  build-artifact-datetime:
     needs: [setup]
     runs-on: ubuntu-latest
     steps:
@@ -87,7 +158,7 @@ jobs:
       - uses: actions/checkout@v6
 
       - name: Setup Kosli CLI
-        uses: kosli-dev/setup-cli-action@v3
+        uses: kosli-dev/setup-cli-action@v5
         with:
           version: ${{ vars.KOSLI_CLI_VERSION }}
 
@@ -97,9 +168,10 @@ jobs:
             --artifact-type file
             --name artifact
 
-  attest-junit:
+
+  attest-junit-datetime:
     needs: [setup]
-    if: fromJSON(needs.setup.outputs.repo_json).has_junit
+    if: github.event.repository.name != 'base' && fromJSON(needs.setup.outputs.repo_json).has_junit
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
@@ -110,7 +182,7 @@ jobs:
       - uses: actions/checkout@v6
 
       - name: Setup Kosli CLI
-        uses: kosli-dev/setup-cli-action@v3
+        uses: kosli-dev/setup-cli-action@v5
         with:
           version: ${{ vars.KOSLI_CLI_VERSION }}
 
