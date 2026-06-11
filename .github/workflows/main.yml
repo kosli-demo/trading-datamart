@@ -118,58 +118,6 @@ jobs:
 
 
   attest-junit:
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Harden Runner
-        uses: step-security/harden-runner@v2
-        with:
-          egress-policy: audit
-
-      - uses: actions/checkout@v6
-
-      - name: Download Docker image tar
-        uses: actions/download-artifact@v6
-        with:
-          name: ${{ needs.build.outputs.digest }}
-
-      - name: Setup Kosli CLI
-        uses: kosli-dev/setup-cli-action@v5
-        with:
-          version: ${{ vars.KOSLI_CLI_VERSION }}
-
-      - name: Kosli attest junit
-        run:
-          kosli attest junit ${{ needs.build.outputs.digest }}.tar
-            --artifact-type file
-            --name unit-tests
-            --results-dir ./source
-
-
-  build-artifact-datetime:
-    needs: [setup]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Harden Runner
-        uses: step-security/harden-runner@v2
-        with:
-          egress-policy: audit
-
-      - uses: actions/checkout@v6
-
-      - name: Setup Kosli CLI
-        uses: kosli-dev/setup-cli-action@v5
-        with:
-          version: ${{ vars.KOSLI_CLI_VERSION }}
-
-      - name: Kosli attest artifact
-        run:
-          kosli attest artifact ./source/datetime.txt
-            --artifact-type file
-            --name artifact
-
-
-  attest-junit-datetime:
     needs: [setup]
     if: github.event.repository.name != 'base' && fromJSON(needs.setup.outputs.repo_json).has_junit
     runs-on: ubuntu-latest
