@@ -102,7 +102,7 @@ jobs:
 
   build:
     needs: [setup]
-    uses: kosli-demo/actions/.github/workflows/secure-docker-build2.yml@main
+    uses: kosli-demo/actions/.github/workflows/secure-docker-build.yml@main
     with:
       checkout_repository: ${{ github.repository }}
       checkout_ref: ${{ github.sha }}
