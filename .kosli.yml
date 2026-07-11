@@ -1,0 +1,15 @@
+version: 1
+
+trail:
+  artifacts:
+    - name: artifact
+      attestations:
+        - name: provenance-facts
+          type: custom:provenance-facts
+        - name: provenance-decision
+          type: decision
+
+        - name: sbom-facts
+          type: custom:sbom-facts
+        - name: sbom-decision
+          type: decision

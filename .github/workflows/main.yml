@@ -75,7 +75,8 @@ jobs:
 
       - name: Create Kosli Flow
         run:
-          kosli create flow "${KOSLI_FLOW}" --use-empty-template
+          kosli create flow "${KOSLI_FLOW}"
+            --template-file .kosli.yml
 
       - name: Tag the Flow
         run:

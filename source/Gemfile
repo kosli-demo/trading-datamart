@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+# Minimal Rack app: the Rack interface plus the puma server that runs it.
+gem 'rack'
+gem 'puma'

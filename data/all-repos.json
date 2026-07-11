@@ -4000,6 +4000,246 @@
     }
   },
   {
+    "repo_name": "atomic-ledger",
+    "exists": true,
+    "has_junit": true,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "atomic-ledger-fxggzllkk-jctj4",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "atomic-ledger-fxggzllkk",
+          "uid": "9ddba02d-3e06-542d-97db-45cd71f12346",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "cold-wallet",
+    "exists": true,
+    "has_junit": false,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "cold-wallet-bhwpsg5vx-d9ljf",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "cold-wallet-bhwpsg5vx",
+          "uid": "9543588f-8cb5-5279-8a70-e3afa6084481",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "hot-wallet",
+    "exists": true,
+    "has_junit": true,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "hot-wallet-cd4hglz9f-l2cw8",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "hot-wallet-cd4hglz9f",
+          "uid": "184098f4-a2b1-5c80-bd73-2e06fa14b5c7",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "canonical-ledger",
+    "exists": true,
+    "has_junit": true,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "canonical-ledger-nfzslrhhc-fhdfs",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "canonical-ledger-nfzslrhhc",
+          "uid": "1dcf2cbb-0e11-58bc-97dd-4b301665e253",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "immutable-ledger",
+    "exists": true,
+    "has_junit": true,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "immutable-ledger-j58qbllll-4n9nk",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "immutable-ledger-j58qbllll",
+          "uid": "cb3ca99a-e0fb-56d0-b387-76d5957d8791",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "central-vault",
+    "exists": true,
+    "has_junit": true,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "central-vault-vndv4r5g6-tn555",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "central-vault-vndv4r5g6",
+          "uid": "ccd18c6c-f0e3-5575-a600-57fc5f27dde5",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "digital-vault",
+    "exists": true,
+    "has_junit": false,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "digital-vault-mckxsbljs-m6568",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "digital-vault-mckxsbljs",
+          "uid": "16c64a31-f500-5083-b8ba-3b2779bb0269",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "encrypted-vault",
+    "exists": true,
+    "has_junit": true,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "encrypted-vault-jwqndmkbg-kmwqb",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "encrypted-vault-jwqndmkbg",
+          "uid": "ad885925-f5be-5aaa-955c-b7380982fcee",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "secure-vault",
+    "exists": true,
+    "has_junit": true,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "secure-vault-nccgf92fl-4pnqj",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "secure-vault-nccgf92fl",
+          "uid": "e1b146bd-c666-52e2-816b-eefd99f43610",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "distributed-ledger",
+    "exists": true,
+    "has_junit": true,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "distributed-ledger-2kzl6jrps-gc4fl",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "distributed-ledger-2kzl6jrps",
+          "uid": "67233b95-6cca-5a0a-a601-81e13fb1c61e",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "private-vault",
+    "exists": true,
+    "has_junit": true,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "private-vault-xwfg8vwrs-7k8gp",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "private-vault-xwfg8vwrs",
+          "uid": "94d80a30-88c2-5a5b-92a0-bdaccceb6623",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
+    "repo_name": "corporate-wallet",
+    "exists": true,
+    "has_junit": false,
+    "env": "staging-k8s",
+    "k8s": {
+      "namespace": "beta",
+      "podName": "corporate-wallet-95p96vfd7-8rln6",
+      "owners": [
+        {
+          "apiVersion": "apps/v1",
+          "kind": "ReplicaSet",
+          "name": "corporate-wallet-95p96vfd7",
+          "uid": "60d2028f-fa20-5ff7-aceb-7b65cdb0abdf",
+          "controller": true,
+          "blockOwnerDeletion": true
+        }
+      ]
+    }
+  },
+  {
     "repo_name": "credit-spread",
     "exists": false,
     "has_junit": true,
@@ -4053,26 +4293,6 @@
           "kind": "ReplicaSet",
           "name": "data-pipeline-l4k5ffl27",
           "uid": "b8d5b2b3-fcc5-548b-8a61-e073d7ed628d",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
-    "repo_name": "atomic-ledger",
-    "exists": true,
-    "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "atomic-ledger-fxggzllkk-jctj4",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "atomic-ledger-fxggzllkk",
-          "uid": "9ddba02d-3e06-542d-97db-45cd71f12346",
           "controller": true,
           "blockOwnerDeletion": true
         }
@@ -4340,26 +4560,6 @@
     }
   },
   {
-    "repo_name": "cold-wallet",
-    "exists": true,
-    "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "cold-wallet-bhwpsg5vx-d9ljf",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "cold-wallet-bhwpsg5vx",
-          "uid": "9543588f-8cb5-5279-8a70-e3afa6084481",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
     "repo_name": "payment-processor",
     "exists": false,
     "has_junit": false,
@@ -4473,26 +4673,6 @@
           "kind": "ReplicaSet",
           "name": "swift-connector-dcqvqb7dz",
           "uid": "53691e28-c86f-5308-b663-a72be7c79744",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
-    "repo_name": "hot-wallet",
-    "exists": true,
-    "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "hot-wallet-cd4hglz9f-l2cw8",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "hot-wallet-cd4hglz9f",
-          "uid": "184098f4-a2b1-5c80-bd73-2e06fa14b5c7",
           "controller": true,
           "blockOwnerDeletion": true
         }
@@ -5360,26 +5540,6 @@
     }
   },
   {
-    "repo_name": "canonical-ledger",
-    "exists": true,
-    "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "canonical-ledger-nfzslrhhc-fhdfs",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "canonical-ledger-nfzslrhhc",
-          "uid": "1dcf2cbb-0e11-58bc-97dd-4b301665e253",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
     "repo_name": "message-queue",
     "exists": false,
     "has_junit": true,
@@ -5633,26 +5793,6 @@
           "kind": "ReplicaSet",
           "name": "floating-rate-9tppf7v8f",
           "uid": "cf9b9c54-0a78-5001-8be6-adddff74bd44",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
-    "repo_name": "immutable-ledger",
-    "exists": true,
-    "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "immutable-ledger-j58qbllll-4n9nk",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "immutable-ledger-j58qbllll",
-          "uid": "cb3ca99a-e0fb-56d0-b387-76d5957d8791",
           "controller": true,
           "blockOwnerDeletion": true
         }
@@ -5953,26 +6093,6 @@
           "kind": "ReplicaSet",
           "name": "instant-settlement-2xv6cnrr7",
           "uid": "7c3551ff-55e5-5008-94df-6df5636437b9",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
-    "repo_name": "central-vault",
-    "exists": true,
-    "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "central-vault-vndv4r5g6-tn555",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "central-vault-vndv4r5g6",
-          "uid": "ccd18c6c-f0e3-5575-a600-57fc5f27dde5",
           "controller": true,
           "blockOwnerDeletion": true
         }
@@ -6433,26 +6553,6 @@
           "kind": "ReplicaSet",
           "name": "prime-custody-2dcvg9jlx",
           "uid": "f75aacd7-dc3b-5b90-9ded-eb6bde3c4667",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
-    "repo_name": "digital-vault",
-    "exists": true,
-    "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "digital-vault-mckxsbljs-m6568",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "digital-vault-mckxsbljs",
-          "uid": "16c64a31-f500-5083-b8ba-3b2779bb0269",
           "controller": true,
           "blockOwnerDeletion": true
         }
@@ -7040,26 +7140,6 @@
     }
   },
   {
-    "repo_name": "encrypted-vault",
-    "exists": true,
-    "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "encrypted-vault-jwqndmkbg-kmwqb",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "encrypted-vault-jwqndmkbg",
-          "uid": "ad885925-f5be-5aaa-955c-b7380982fcee",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
     "repo_name": "recurring-payment",
     "exists": false,
     "has_junit": true,
@@ -7213,26 +7293,6 @@
           "kind": "ReplicaSet",
           "name": "vanilla-derivative-f8p7jf8xn",
           "uid": "dc1a7279-c13f-59f2-8df3-4895e9193d66",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
-    "repo_name": "secure-vault",
-    "exists": true,
-    "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "secure-vault-nccgf92fl-4pnqj",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "secure-vault-nccgf92fl",
-          "uid": "e1b146bd-c666-52e2-816b-eefd99f43610",
           "controller": true,
           "blockOwnerDeletion": true
         }
@@ -7720,26 +7780,6 @@
     }
   },
   {
-    "repo_name": "distributed-ledger",
-    "exists": true,
-    "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "distributed-ledger-2kzl6jrps-gc4fl",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "distributed-ledger-2kzl6jrps",
-          "uid": "67233b95-6cca-5a0a-a601-81e13fb1c61e",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
     "repo_name": "risk-calculator",
     "exists": false,
     "has_junit": true,
@@ -8053,26 +8093,6 @@
           "kind": "ReplicaSet",
           "name": "trusted-counterparty-5tv7mnf4z",
           "uid": "207a6d3f-3b57-5418-9e06-30093cc63706",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
-    "repo_name": "private-vault",
-    "exists": true,
-    "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "private-vault-xwfg8vwrs-7k8gp",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "private-vault-xwfg8vwrs",
-          "uid": "94d80a30-88c2-5a5b-92a0-bdaccceb6623",
           "controller": true,
           "blockOwnerDeletion": true
         }
@@ -8593,26 +8613,6 @@
           "kind": "ReplicaSet",
           "name": "spot-forex-5zkzcnbw2",
           "uid": "8bdbf3c1-e45e-5c05-b07b-5b65b0a4a654",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
-    }
-  },
-  {
-    "repo_name": "corporate-wallet",
-    "exists": true,
-    "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "corporate-wallet-95p96vfd7-8rln6",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "corporate-wallet-95p96vfd7",
-          "uid": "60d2028f-fa20-5ff7-aceb-7b65cdb0abdf",
           "controller": true,
           "blockOwnerDeletion": true
         }

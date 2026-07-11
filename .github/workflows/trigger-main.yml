@@ -7,6 +7,6 @@ jobs:
   main:
     uses: ./.github/workflows/main.yml
     with:
-      kosli_host: https://staging.app.kosli.com
+      kosli_host: https://app.kosli.com
     secrets:
-      kosli_api_token: ${{ secrets.KOSLI_API_TOKEN_STAGING }}
+      kosli_api_token: ${{ secrets.KOSLI_API_TOKEN_PROD }}
