@@ -140,3 +140,48 @@ jobs:
           kosli attest junit
             --name unit-tests
             --results-dir ./source
+
+
+  sdlc-gate:
+    needs: [build, attest-junit]
+    # The SDLC gate: a real pipeline asserts the artifact is compliant before it
+    # deploys. Runs once the artifact (build) and its attestations are in, even
+    # when attest-junit was skipped (repos with no junit). kosli assert artifact
+    # exits non-zero -- failing this job and the whole run -- if the artifact is
+    # non-compliant, so a failing gate stops the deploy below.
+    if: ${{ !cancelled() && needs.build.result == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - name: Setup Kosli CLI
+        uses: kosli-dev/setup-cli-action@v5
+        with:
+          version: ${{ vars.KOSLI_CLI_VERSION }}
+
+      - name: Assert the artifact is compliant
+        run:
+          kosli assert artifact
+            --fingerprint "${{ needs.build.outputs.digest }}"
+            --flow "${KOSLI_FLOW}"
+
+
+  deploy-to-staging:
+    needs: [sdlc-gate]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+
+      - name: Deploy to staging (faked)
+        # kosli-demo has (currently) no real runtime environments. "Deployment" is
+        # faked by a separate workflow that builds and PUTs snapshot reports
+        # directly to Kosli, because it is 1) simpler, 2) cheaper, and 3) quicker
+        # (a nice win for a demo).
+        run:
+          echo "kosli-demo has (currently) no real runtime environments; deploy to staging is faked."

@@ -3,1740 +3,957 @@
     "repo_name": "price-index",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "price-index-fxblt7pxf-d4xvq",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "price-index-fxblt7pxf",
-          "uid": "917b70a1-a22c-590f-bb4d-0efc7af9a83f",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/495212f6e09363c12dbed55757a8af91",
+      "cluster_name": "beta",
+      "service_name": "price-index"
     }
   },
   {
     "repo_name": "listed-derivative",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "listed-derivative-vkhhc7gfd-vfg8j",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "listed-derivative-vkhhc7gfd",
-          "uid": "765b11d9-9425-5a7e-ab40-44113366723b",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/a6667aa9526a1985abfba6fbd3a88e84",
+      "cluster_name": "beta",
+      "service_name": "listed-derivative"
     }
   },
   {
     "repo_name": "data-adapter",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "data-adapter-qndctghbd-j5v9k",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "data-adapter-qndctghbd",
-          "uid": "a4cdf975-d005-596e-b8ca-8b25eb967bc1",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/64968c3039940185f1fc35ae106d1d69",
+      "cluster_name": "beta",
+      "service_name": "data-adapter"
     }
   },
   {
     "repo_name": "golden-ledger",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "golden-ledger-5kcl428kj-mxj2h",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "golden-ledger-5kcl428kj",
-          "uid": "4e5572cf-7a0d-50ff-86a2-3488db75dba7",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/44a8debf592173d75dbe3616d06cf609",
+      "cluster_name": "beta",
+      "service_name": "golden-ledger"
     }
   },
   {
     "repo_name": "commercial-loan",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "commercial-loan-6kpmx9pt2-bkjll",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "commercial-loan-6kpmx9pt2",
-          "uid": "8abe2c76-8c5e-598b-8dd1-c77bfa4beb05",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/a1058c4228543e2f3b6fcbe3b911ad5f",
+      "cluster_name": "beta",
+      "service_name": "commercial-loan"
     }
   },
   {
     "repo_name": "risk-service",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "risk-service-j8g5hlnkh-5zvr9",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "risk-service-j8g5hlnkh",
-          "uid": "10895844-390b-592c-bb70-b683bf36edcf",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/07a5e1f25133b541e942f9532b49768e",
+      "cluster_name": "beta",
+      "service_name": "risk-service"
     }
   },
   {
     "repo_name": "syndicated-deal",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "syndicated-deal-2hglz5t9j-jwddt",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "syndicated-deal-2hglz5t9j",
-          "uid": "05001a83-0e9b-5dae-87d0-5aff16c8ea0a",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/003c896dfbbb6826d6fbb13ec412f713",
+      "cluster_name": "beta",
+      "service_name": "syndicated-deal"
     }
   },
   {
     "repo_name": "service-identity",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "service-identity-8tkdn5p2z-psgmg",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "service-identity-8tkdn5p2z",
-          "uid": "3a9979f2-3d99-54f0-a5ca-81d80924138b",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/5aed5e4192d498a2e22de31eb9f7c052",
+      "cluster_name": "beta",
+      "service_name": "service-identity"
     }
   },
   {
     "repo_name": "trade-queue",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "trade-queue-7fsz8qcf5-s7wnl",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "trade-queue-7fsz8qcf5",
-          "uid": "8bea3bf7-d80d-57bb-b35b-de85c4139079",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/34d95586d54654426951987223d17f5b",
+      "cluster_name": "beta",
+      "service_name": "trade-queue"
     }
   },
   {
     "repo_name": "embedded-compliance",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "embedded-compliance-v4xht46qf-2ngxl",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "embedded-compliance-v4xht46qf",
-          "uid": "c3875b6a-dc09-5f03-bfa5-c96ceeda638d",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/1837eda98d136e27f16ef95e9dc3af2b",
+      "cluster_name": "beta",
+      "service_name": "embedded-compliance"
     }
   },
   {
     "repo_name": "predictive-analytics",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "predictive-analytics-8xtdnwmvw-nq65w",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "predictive-analytics-8xtdnwmvw",
-          "uid": "771a50a4-dc3f-5761-a2a5-f5b4e207e523",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/7f50bc20cdbd8a4154d5cbe1ccef5e5c",
+      "cluster_name": "beta",
+      "service_name": "predictive-analytics"
     }
   },
   {
     "repo_name": "excess-liquidity",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "excess-liquidity-ppktvgcm8-thnb4",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "excess-liquidity-ppktvgcm8",
-          "uid": "6645e61a-e83f-58c0-b3f4-eb2dbc536031",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/c7e325becdb32c210337fa34cebe8a1d",
+      "cluster_name": "beta",
+      "service_name": "excess-liquidity"
     }
   },
   {
     "repo_name": "managed-portfolio",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "managed-portfolio-pm677qzn2-shhbz",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "managed-portfolio-pm677qzn2",
-          "uid": "21dc194c-fa05-50cb-9434-2674080a2004",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/8ac231460a090b5a7f5829437bf75b9d",
+      "cluster_name": "beta",
+      "service_name": "managed-portfolio"
     }
   },
   {
     "repo_name": "ask-spread",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "ask-spread-br2wtbdxn-b6t68",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "ask-spread-br2wtbdxn",
-          "uid": "5f7081d7-232b-5288-a861-1d3d86650c8f",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/01b26d26063d6fafa426a67c403f5051",
+      "cluster_name": "beta",
+      "service_name": "ask-spread"
     }
   },
   {
     "repo_name": "service-ticket",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "service-ticket-cz925mxcq-5crnj",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "service-ticket-cz925mxcq",
-          "uid": "86cea3d6-0475-56d8-92e9-c2f41b41d0ec",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/d74a7124c8d062ccd037b5b9e63265ce",
+      "cluster_name": "beta",
+      "service_name": "service-ticket"
     }
   },
   {
     "repo_name": "bilateral-counterparty",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "bilateral-counterparty-rx2jl2ct9-w6v8p",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "bilateral-counterparty-rx2jl2ct9",
-          "uid": "affa85f0-004d-539d-8e76-8465a56e6a33",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/9e72a7ed25910d71373c460220738d69",
+      "cluster_name": "beta",
+      "service_name": "bilateral-counterparty"
     }
   },
   {
     "repo_name": "instrument-registry",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "instrument-registry-9fspvzflm-7whmm",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "instrument-registry-9fspvzflm",
-          "uid": "1c6643eb-8707-5da1-ac43-ee7317b94d9d",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/1262c87f36b768e4a998f1ef2d05675a",
+      "cluster_name": "beta",
+      "service_name": "instrument-registry"
     }
   },
   {
     "repo_name": "preferred-client",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "preferred-client-2fcfxmqdg-z69xj",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "preferred-client-2fcfxmqdg",
-          "uid": "ee9f960a-0d1e-5ba8-9008-99ea264b0c4c",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/a3d1a64a26f4046f617546caa68c371c",
+      "cluster_name": "beta",
+      "service_name": "preferred-client"
     }
   },
   {
     "repo_name": "performance-index",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "performance-index-hbdpsfp2n-nhp4r",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "performance-index-hbdpsfp2n",
-          "uid": "591d89a0-b2e3-5069-bb73-f30be5006e39",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/9c384ce82058512f73058dcf958ed9ae",
+      "cluster_name": "beta",
+      "service_name": "performance-index"
     }
   },
   {
     "repo_name": "stop-order",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "stop-order-rzlwd7hxw-n9mfp",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "stop-order-rzlwd7hxw",
-          "uid": "06f6148c-0710-5198-82f8-40fccf1c727a",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/493d18450cd61929e012e42cbd2b5d24",
+      "cluster_name": "beta",
+      "service_name": "stop-order"
     }
   },
   {
     "repo_name": "pending-transaction",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "pending-transaction-8pshsh4bk-sqqw4",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "pending-transaction-8pshsh4bk",
-          "uid": "3a6dcc9b-07ef-5ee8-8425-88d25ac7fb10",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/8f2279a1abecbb62bb81aa434e852280",
+      "cluster_name": "beta",
+      "service_name": "pending-transaction"
     }
   },
   {
     "repo_name": "market-signal",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "market-signal-v6gqtjnzt-wpb2s",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "market-signal-v6gqtjnzt",
-          "uid": "82edc756-630c-53bc-b519-584748ad46ff",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/44686f0d307084e1ab2731843a1f0b31",
+      "cluster_name": "beta",
+      "service_name": "market-signal"
     }
   },
   {
     "repo_name": "auth-microservice",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "auth-microservice-lqnhxtgkx-mr84x",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "auth-microservice-lqnhxtgkx",
-          "uid": "87826dbb-64ea-56cd-951f-3fc8d4b7ba79",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/079c3fc6678ca0981d39fb5d008f45c6",
+      "cluster_name": "beta",
+      "service_name": "auth-microservice"
     }
   },
   {
     "repo_name": "instant-payment",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "instant-payment-tsnk7f5mw-mpvll",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "instant-payment-tsnk7f5mw",
-          "uid": "c96c259b-1ed3-5064-8d2b-e56f37fb9e23",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/de7e1ab7a20d11c6ad10355b53985030",
+      "cluster_name": "beta",
+      "service_name": "instant-payment"
     }
   },
   {
     "repo_name": "service-contract",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "service-contract-psvwwqzz6-cwllk",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "service-contract-psvwwqzz6",
-          "uid": "364b115f-5b13-5a4d-8a5e-7f48aed0a28e",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/7f65b8d1763d3ab3635b619258d9b402",
+      "cluster_name": "beta",
+      "service_name": "service-contract"
     }
   },
   {
     "repo_name": "system-credential",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "system-credential-vlldz76fq-j8w22",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "system-credential-vlldz76fq",
-          "uid": "75d7599c-46e3-568b-bbcc-64f9990c3e29",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/7527b2a91fd4c5174ea4877ce8c57b09",
+      "cluster_name": "beta",
+      "service_name": "system-credential"
     }
   },
   {
     "repo_name": "concentration-limit",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "concentration-limit-nll5gz7pt-8rd2v",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "concentration-limit-nll5gz7pt",
-          "uid": "55b9b0ac-b414-54f1-973f-9da0e200a336",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/d705b7c802f02e26b8f22d384d18def3",
+      "cluster_name": "beta",
+      "service_name": "concentration-limit"
     }
   },
   {
     "repo_name": "automated-audit",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "automated-audit-nsv9jnx82-tbh6t",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "automated-audit-nsv9jnx82",
-          "uid": "61c323ea-afd9-55c6-9728-9a1332633bfc",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/94107affeaee42febb2422078d8b2df7",
+      "cluster_name": "beta",
+      "service_name": "automated-audit"
     }
   },
   {
     "repo_name": "secure-relay",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "secure-relay-q7p5vh6wv-dlnq7",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "secure-relay-q7p5vh6wv",
-          "uid": "78ee19e1-a6ea-528e-837a-dfcdd85a0b17",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/9f64b109a911b4878f39ae12534774d0",
+      "cluster_name": "beta",
+      "service_name": "secure-relay"
     }
   },
   {
     "repo_name": "batch-processor",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "batch-processor-7f2lsmtt6-br9fz",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "batch-processor-7f2lsmtt6",
-          "uid": "64108adc-e2a6-5b76-909d-1c65b5e3d75f",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/538b8d4ad902905982b939cc536d6ab4",
+      "cluster_name": "beta",
+      "service_name": "batch-processor"
     }
   },
   {
     "repo_name": "netting-exposure",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "netting-exposure-9794fq5fj-m8n9q",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "netting-exposure-9794fq5fj",
-          "uid": "fd7e772d-acf8-5ab3-a874-d9581071cb1c",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/04034d9a61090ab4f8023f4306482ed4",
+      "cluster_name": "beta",
+      "service_name": "netting-exposure"
     }
   },
   {
     "repo_name": "bond-issuer",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "bond-issuer-77rhxkz9z-rzpz5",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "bond-issuer-77rhxkz9z",
-          "uid": "10aa5089-c26a-5d04-9d25-06bb8015330c",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/da0b21f752071cd23d0ce4c37508d394",
+      "cluster_name": "beta",
+      "service_name": "bond-issuer"
     }
   },
   {
     "repo_name": "matching-engine",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "matching-engine-85ctfzc5d-46k4f",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "matching-engine-85ctfzc5d",
-          "uid": "8194a78c-8980-52d3-89e0-2733e6bf40ad",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/5798474f671c49ac7040f1603ecd30c6",
+      "cluster_name": "beta",
+      "service_name": "matching-engine"
     }
   },
   {
     "repo_name": "domestic-issuer",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "domestic-issuer-mvvpqs6wd-mfvk7",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "domestic-issuer-mvvpqs6wd",
-          "uid": "a22fe191-a74a-532a-89f2-80ee91fd5129",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/af969b52eadd02f9b4c2656e480ba59e",
+      "cluster_name": "beta",
+      "service_name": "domestic-issuer"
     }
   },
   {
     "repo_name": "server-certificate",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "server-certificate-f6ndtqj96-m29nz",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "server-certificate-f6ndtqj96",
-          "uid": "a55624bf-0b18-582c-ac7b-0cc59b6b02fb",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/bae890af22e538a433be549c3584304e",
+      "cluster_name": "beta",
+      "service_name": "server-certificate"
     }
   },
   {
     "repo_name": "acquiring-merchant",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "acquiring-merchant-j4hv2q48z-scjmf",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "acquiring-merchant-j4hv2q48z",
-          "uid": "8f51a7a3-0f74-5a45-9be2-58eae2dfb832",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/9e6cca4b9b2972883d80ac33ea40498c",
+      "cluster_name": "beta",
+      "service_name": "acquiring-merchant"
     }
   },
   {
     "repo_name": "corporate-bond",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "corporate-bond-vrlmpzx7n-pqr55",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "corporate-bond-vrlmpzx7n",
-          "uid": "e6576b55-00a9-54c3-847b-f361fc2a89a7",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/4c4ff8ebd7af2bc0425c3af784676d06",
+      "cluster_name": "beta",
+      "service_name": "corporate-bond"
     }
   },
   {
     "repo_name": "open-position",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "open-position-4mslvkslx-p2gb9",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "open-position-4mslvkslx",
-          "uid": "27635468-e31f-5d6c-90c3-c5ca34ebb280",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/a4ce17c6047e7de108c16c644e6a3e2c",
+      "cluster_name": "beta",
+      "service_name": "open-position"
     }
   },
   {
     "repo_name": "payment-framework",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "payment-framework-wn6rssbgf-q6zgt",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "payment-framework-wn6rssbgf",
-          "uid": "ab52208c-44b8-5ed1-9128-389fee01ff50",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/fa11b6ce972c9335359f55ebc64c1830",
+      "cluster_name": "beta",
+      "service_name": "payment-framework"
     }
   },
   {
     "repo_name": "trading-account",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "trading-account-5jr6nzt9q-vg92h",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "trading-account-5jr6nzt9q",
-          "uid": "18a932f9-e8a0-54e3-8dab-7f28b7505703",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/b269cc969e3a6de7e2d0ded2ddc9dfb8",
+      "cluster_name": "beta",
+      "service_name": "trading-account"
     }
   },
   {
     "repo_name": "global-custodian",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "global-custodian-hg247t9xd-92pnq",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "global-custodian-hg247t9xd",
-          "uid": "f52dae90-8eff-5d07-9ccd-7753ed83b507",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/103ebbf62b827736212b07237e1bce13",
+      "cluster_name": "beta",
+      "service_name": "global-custodian"
     }
   },
   {
     "repo_name": "asset-catalog",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "asset-catalog-lgc59stng-fhndt",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "asset-catalog-lgc59stng",
-          "uid": "92a2b761-a94d-5649-8074-164a0267385b",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/16e7d55f9f0647cb3c1044490e6f563f",
+      "cluster_name": "beta",
+      "service_name": "asset-catalog"
     }
   },
   {
     "repo_name": "automated-validator",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "automated-validator-w7dnmw2mr-jhpdt",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "automated-validator-w7dnmw2mr",
-          "uid": "1a7fde9d-d94c-54d1-9dd4-6373a46721cc",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/c73ba45290d6722ae26c9249a68c70a2",
+      "cluster_name": "beta",
+      "service_name": "automated-validator"
     }
   },
   {
     "repo_name": "balanced-portfolio",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "balanced-portfolio-xmb6ccgfw-5vk6b",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "balanced-portfolio-xmb6ccgfw",
-          "uid": "5de48b0e-8799-570c-ba1a-4461289d577d",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/a2b4af90840ff47cd393d5a0e47a2fc2",
+      "cluster_name": "beta",
+      "service_name": "balanced-portfolio"
     }
   },
   {
     "repo_name": "trading-datamart",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "trading-datamart-ll5nj9dbk-5b7st",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "trading-datamart-ll5nj9dbk",
-          "uid": "0fce2fbc-11c3-55c8-ab99-a1cf0bae518d",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/1c21f62c618f7a67863e70d349256e15",
+      "cluster_name": "beta",
+      "service_name": "trading-datamart"
     }
   },
   {
     "repo_name": "risk-datamart",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "risk-datamart-rdlcdmntx-nbpgj",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "risk-datamart-rdlcdmntx",
-          "uid": "e03ece90-e2fe-5ad3-963c-0b3f930c106a",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/144f863c0ed28cdf088cf1fc98863f23",
+      "cluster_name": "beta",
+      "service_name": "risk-datamart"
     }
   },
   {
     "repo_name": "data-catalog",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "data-catalog-c6pk9gl4z-cvdd6",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "data-catalog-c6pk9gl4z",
-          "uid": "57e2dddb-ec47-57c4-bb9f-7148aa26f135",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/4b9d42d1f7f1cc61032a36c636bf16f3",
+      "cluster_name": "beta",
+      "service_name": "data-catalog"
     }
   },
   {
     "repo_name": "proactive-compliance",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "proactive-compliance-z5r8g4tch-mhhd8",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "proactive-compliance-z5r8g4tch",
-          "uid": "14607c4e-ec6e-5fb5-9649-f1ce95b84ee2",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/57d471795f551bc1fb7f8305fea36d60",
+      "cluster_name": "beta",
+      "service_name": "proactive-compliance"
     }
   },
   {
     "repo_name": "core-liquidity",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "core-liquidity-6stljqflj-2bffx",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "core-liquidity-6stljqflj",
-          "uid": "7d5a4de2-ead3-5e04-8405-dc88b5c914f4",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/055f50d65ebbd7fb2f360ed0dd2bb49d",
+      "cluster_name": "beta",
+      "service_name": "core-liquidity"
     }
   },
   {
     "repo_name": "bearer-token",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "bearer-token-d7hnl8dml-mmhqq",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "bearer-token-d7hnl8dml",
-          "uid": "16683c64-4040-5f16-93c0-82cc0e57c331",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/fea84c89725c7fdf3a723637f40b9990",
+      "cluster_name": "beta",
+      "service_name": "bearer-token"
     }
   },
   {
     "repo_name": "current-yield",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "current-yield-j6pjmq6n7-q2qzx",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "current-yield-j6pjmq6n7",
-          "uid": "f38e508f-8de4-5efc-8b9a-ddb382998956",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/192eaa37f56f758759689fdb96738d64",
+      "cluster_name": "beta",
+      "service_name": "current-yield"
     }
   },
   {
     "repo_name": "forward-yield",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "forward-yield-7pdnn9spf-2gdr9",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "forward-yield-7pdnn9spf",
-          "uid": "a87f4fa3-0a45-52de-b1d2-22bc56431f5e",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/cfe847f1dc02c26ef7af3fdb2dcb445a",
+      "cluster_name": "beta",
+      "service_name": "forward-yield"
     }
   },
   {
     "repo_name": "transaction-archive",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "transaction-archive-2c956bqr6-v4fhf",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "transaction-archive-2c956bqr6",
-          "uid": "fa93151b-1d72-5232-b317-28ac8cde21ce",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/b5e692f29c7f1d64a7f0e80a52a0c9ea",
+      "cluster_name": "beta",
+      "service_name": "transaction-archive"
     }
   },
   {
     "repo_name": "order-router",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "order-router-9mwblnknr-hj6qn",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "order-router-9mwblnknr",
-          "uid": "2b748049-ece7-52e8-b8c6-14edb126cd78",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/1122842a2d35b837b1c332ed4fcb60d1",
+      "cluster_name": "beta",
+      "service_name": "order-router"
     }
   },
   {
     "repo_name": "revolving-loan",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "revolving-loan-885s2dlrw-btq8d",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "revolving-loan-885s2dlrw",
-          "uid": "3d85fdd0-04b8-5a66-8048-e8fd9671969f",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/9683bcb0c304d8f3db6a8027f7ab890a",
+      "cluster_name": "beta",
+      "service_name": "revolving-loan"
     }
   },
   {
     "repo_name": "format-adapter",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "format-adapter-gtznppqj5-24pbg",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "format-adapter-gtznppqj5",
-          "uid": "c9558f0a-461e-5c85-8705-883448c3f116",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/f094981c5def201e71f22cdb8dcd2e4c",
+      "cluster_name": "beta",
+      "service_name": "format-adapter"
     }
   },
   {
     "repo_name": "overnight-swap",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "overnight-swap-6s8xrvr9t-fg42v",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "overnight-swap-6s8xrvr9t",
-          "uid": "243cb2e9-ece8-531b-85d2-3415aeb7c067",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/062a62d10bb75927ba7c45d122dff75e",
+      "cluster_name": "beta",
+      "service_name": "overnight-swap"
     }
   },
   {
     "repo_name": "legal-contract",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "legal-contract-jlfslgsvs-4wfpp",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "legal-contract-jlfslgsvs",
-          "uid": "ece0cbc1-6761-5f4e-9f74-749e2c73040d",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/2756bfcdb8e1300a9f6e64aeaf3c1a5b",
+      "cluster_name": "beta",
+      "service_name": "legal-contract"
     }
   },
   {
     "repo_name": "margin-calculator",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "margin-calculator-pfqhxfvmc-tnd6v",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "margin-calculator-pfqhxfvmc",
-          "uid": "a0729d68-a9a4-5cc3-9a3c-f370848c1efd",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/d40b188dedc70fc7ebd4e8eab2afd08b",
+      "cluster_name": "beta",
+      "service_name": "margin-calculator"
     }
   },
   {
     "repo_name": "risk-notification",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "risk-notification-7kt8qqdjc-x28mj",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "risk-notification-7kt8qqdjc",
-          "uid": "da51328f-2257-5c66-9fad-4f3bbd05b18f",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/821460010e8d8173d3f65ef458cecafa",
+      "cluster_name": "beta",
+      "service_name": "risk-notification"
     }
   },
   {
     "repo_name": "domestic-payment",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "domestic-payment-g5bvt2t96-x6785",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "domestic-payment-g5bvt2t96",
-          "uid": "5d602ec6-35c9-594c-8be1-873308180205",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/cb0f5564ef3bf60f621042115f316d42",
+      "cluster_name": "beta",
+      "service_name": "domestic-payment"
     }
   },
   {
     "repo_name": "internal-audit",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "internal-audit-w5g76z688-j5flx",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "internal-audit-w5g76z688",
-          "uid": "217bf865-32cf-5695-8505-3cf0c0f7da13",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/f7d7594b63c265b81824545328feeffd",
+      "cluster_name": "beta",
+      "service_name": "internal-audit"
     }
   },
   {
     "repo_name": "registered-merchant",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "registered-merchant-pln9j9sm8-5dfdr",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "registered-merchant-pln9j9sm8",
-          "uid": "2b5bebde-b3b2-5e79-95da-3a544d1afbf4",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/05525eca677ac758fbce67464d07a534",
+      "cluster_name": "beta",
+      "service_name": "registered-merchant"
     }
   },
   {
     "repo_name": "net-settlement",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "net-settlement-vx5n8jl8f-267kf",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "net-settlement-vx5n8jl8f",
-          "uid": "b87bde58-0c70-58ac-a2df-b1bb78d342c5",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/009200fcb24235ede1263c4e930da48e",
+      "cluster_name": "beta",
+      "service_name": "net-settlement"
     }
   },
   {
     "repo_name": "digital-wallet",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "digital-wallet-4pwmsndn8-6f9hj",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "digital-wallet-4pwmsndn8",
-          "uid": "f7f600a3-3e55-5baa-8e0b-f06fe523d1eb",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/f02eb3ca6b1f9d286925ea80673db8d7",
+      "cluster_name": "beta",
+      "service_name": "digital-wallet"
     }
   },
   {
     "repo_name": "realtime-stream",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "realtime-stream-m8hbvdg4t-kvqjs",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "realtime-stream-m8hbvdg4t",
-          "uid": "b51dacb9-8ae9-5603-9196-d7c8c2b254a6",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/90045a92edc80a4bdc1b9201e11c0860",
+      "cluster_name": "beta",
+      "service_name": "realtime-stream"
     }
   },
   {
     "repo_name": "trade-statement",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "trade-statement-lsrrss2qw-tljmz",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "trade-statement-lsrrss2qw",
-          "uid": "4fa57e54-6a5e-57cf-9f3b-55865eba9a49",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/a24837bb875306d4e570cebb2e08a243",
+      "cluster_name": "beta",
+      "service_name": "trade-statement"
     }
   },
   {
     "repo_name": "digital-audit",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "digital-audit-tj7l5jnrt-zgllx",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "digital-audit-tj7l5jnrt",
-          "uid": "17b5767f-de71-5eb9-bbc3-4f2e12480c8d",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/67fe3bb3f9c1e53aef2d7743900bef27",
+      "cluster_name": "beta",
+      "service_name": "digital-audit"
     }
   },
   {
     "repo_name": "trade-registry",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "trade-registry-r8nxsc222-fhphk",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "trade-registry-r8nxsc222",
-          "uid": "b6864442-8297-5299-ac52-4689b7a7c87c",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/2c3ca23ad7e80943861352dcb0e8742b",
+      "cluster_name": "beta",
+      "service_name": "trade-registry"
     }
   },
   {
     "repo_name": "trade-warehouse",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "trade-warehouse-bc8t7xbbz-jjwd6",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "trade-warehouse-bc8t7xbbz",
-          "uid": "f64823d8-3682-5e21-b79a-18e606fabf32",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/99d641e012e46f69ea4718f83a02b3aa",
+      "cluster_name": "beta",
+      "service_name": "trade-warehouse"
     }
   },
   {
     "repo_name": "online-merchant",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "online-merchant-cnrz8m7p9-trjb7",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "online-merchant-cnrz8m7p9",
-          "uid": "952eb137-5cea-59af-a665-48b9e2a7bb8f",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/002972a8c0bd453c3800a88b6f9d7fbe",
+      "cluster_name": "beta",
+      "service_name": "online-merchant"
     }
   },
   {
     "repo_name": "api-key",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "api-key-bxlplqnpd-ppcf2",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "api-key-bxlplqnpd",
-          "uid": "33350778-ec23-5254-a446-f5269f126fcd",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/8c284055dbb54b7f053a2dc612c3727c",
+      "cluster_name": "beta",
+      "service_name": "api-key"
     }
   },
   {
     "repo_name": "junior-bond",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "junior-bond-tkn6jqtjw-8bc8l",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "junior-bond-tkn6jqtjw",
-          "uid": "5ac8ce6c-c611-51fb-85b5-345b5f22fb39",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/ff485e935b1dbec321476c6765104eef",
+      "cluster_name": "beta",
+      "service_name": "junior-bond"
     }
   },
   {
     "repo_name": "domestic-customer",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "domestic-customer-jh288fgl4-zzn4g",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "domestic-customer-jh288fgl4",
-          "uid": "893ee447-2f97-5eea-80c1-5a79f4143dde",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/f1c557d6999de445aed499df31fea697",
+      "cluster_name": "beta",
+      "service_name": "domestic-customer"
     }
   },
   {
     "repo_name": "retail-forex",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "retail-forex-jstmp249k-mzgkb",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "retail-forex-jstmp249k",
-          "uid": "241ef255-0da5-5bc6-a93f-9f97ac3d8ce7",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/b9bfe83bca9313428ae3c9555df79f95",
+      "cluster_name": "beta",
+      "service_name": "retail-forex"
     }
   },
   {
     "repo_name": "risk-module",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "risk-module-7f52mcrqg-5v28q",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "risk-module-7f52mcrqg",
-          "uid": "784978f4-7496-517e-b06e-02f0ab01d771",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/4b4d53acaca1aab5e3d1a9e923568bf1",
+      "cluster_name": "beta",
+      "service_name": "risk-module"
     }
   },
   {
     "repo_name": "data-framework",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "data-framework-kn544j65p-bd2rx",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "data-framework-kn544j65p",
-          "uid": "6c3d7ac2-fd9f-5f56-9cf4-97fa190e35be",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/842cf1f0e7861142ac91474e9604d695",
+      "cluster_name": "beta",
+      "service_name": "data-framework"
     }
   },
   {
     "repo_name": "credit-risk",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "credit-risk-hbnqktj27-mfqdn",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "credit-risk-hbnqktj27",
-          "uid": "85f9fb19-9745-50ee-8b9c-a2428e073dc1",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/7dd772ab7dad191cc7af65c2bc60a5cc",
+      "cluster_name": "beta",
+      "service_name": "credit-risk"
     }
   },
   {
     "repo_name": "optionadjusted-spread",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "optionadjusted-spread-zv9q225g6-mzqpp",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "optionadjusted-spread-zv9q225g6",
-          "uid": "1fbf2977-879b-5ca7-b542-42eece410e56",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/5833199031704e11a4f34169f0aae7e8",
+      "cluster_name": "beta",
+      "service_name": "optionadjusted-spread"
     }
   },
   {
     "repo_name": "data-proxy",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "data-proxy-zzm5hrr6w-dbkdh",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "data-proxy-zzm5hrr6w",
-          "uid": "c281fe17-624c-5a9b-9526-a6f99ce5e8c4",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/09699750965941ae64082a1fccd3b397",
+      "cluster_name": "beta",
+      "service_name": "data-proxy"
     }
   },
   {
     "repo_name": "routing-proxy",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "routing-proxy-brk6hgmh7-7t2hg",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "routing-proxy-brk6hgmh7",
-          "uid": "28f0ec8d-a1fa-5bce-8e2a-b3909a4f6b43",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/8977285ecdc6bf11dbb5d99e18e64bfc",
+      "cluster_name": "beta",
+      "service_name": "routing-proxy"
     }
   },
   {
     "repo_name": "smart-router",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "smart-router-v7cmkplrz-spnrs",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "smart-router-v7cmkplrz",
-          "uid": "800216ac-c63f-5b39-b04d-110ab86e069e",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/cc975f18a5c9f02f22815fc19f6fc6d9",
+      "cluster_name": "beta",
+      "service_name": "smart-router"
     }
   },
   {
     "repo_name": "retail-broker",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "retail-broker-hxqvb4f5w-zzfbq",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "retail-broker-hxqvb4f5w",
-          "uid": "70b520d0-6e01-5b15-bda7-c1ea5a70aa0c",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/22d1d6e1c22a1c189683fe295c4ff43c",
+      "cluster_name": "beta",
+      "service_name": "retail-broker"
     }
   },
   {
     "repo_name": "prime-broker",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "prime-broker-t8zfbsxqq-w5fkr",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "prime-broker-t8zfbsxqq",
-          "uid": "de3a2336-2ad8-5ab9-b279-d5671efb666d",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/3324fc42a1705dab99114d09cf04575a",
+      "cluster_name": "beta",
+      "service_name": "prime-broker"
     }
   },
   {
     "repo_name": "event-dispatcher",
     "exists": true,
     "has_junit": false,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "event-dispatcher-dn5zdjsf6-wmlrw",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "event-dispatcher-dn5zdjsf6",
-          "uid": "c15e247e-6245-5a01-8677-611f223d2af9",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/fea354edb1597be747523a3e7c7086ae",
+      "cluster_name": "beta",
+      "service_name": "event-dispatcher"
     }
   },
   {
     "repo_name": "long-position",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "long-position-d6xhbdbxn-tm9zt",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "long-position-d6xhbdbxn",
-          "uid": "781fb351-84de-575e-924b-80c4e7f53ab4",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/eb43dd5c18fa390140744a628ec7804c",
+      "cluster_name": "beta",
+      "service_name": "long-position"
     }
   },
   {
     "repo_name": "benchmark-rate",
     "exists": true,
     "has_junit": true,
-    "env": "staging-k8s",
-    "k8s": {
-      "namespace": "beta",
-      "podName": "benchmark-rate-h2w8zv56s-wg2mg",
-      "owners": [
-        {
-          "apiVersion": "apps/v1",
-          "kind": "ReplicaSet",
-          "name": "benchmark-rate-h2w8zv56s",
-          "uid": "ece46219-8a80-55b3-b210-8f227eaa6a4c",
-          "controller": true,
-          "blockOwnerDeletion": true
-        }
-      ]
+    "env": "staging-ecs",
+    "ecs": {
+      "taskArn": "arn:aws:ecs:eu-central-1:111122223333:task/beta/28a3b167ac811272ab5d3650f87eba5c",
+      "cluster_name": "beta",
+      "service_name": "benchmark-rate"
     }
   },
   {
